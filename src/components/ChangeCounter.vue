@@ -7,7 +7,9 @@ export default {
     methods:{
         addOne(){
             // this.$store.state.counter++;
-            this.$store.commit('increment');
+            // this.$store.commit('increment');  //exmaple for mutation
+            this.$store.dispatch('increment');  //exmaple for action
+
         }
     }
 }
